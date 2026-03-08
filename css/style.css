@@ -508,46 +508,209 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
     .nav-links {
         display: none;
     }
 
+    section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2.2rem !important;
+        margin-bottom: 40px !important;
+        text-align: center !important;
+    }
+
+    /* Hero section overhaul for mobile */
+    .hero {
+        align-items: center;
+        padding-top: 120px;
+        padding-bottom: 40px;
+        min-height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .hero-content {
+        position: relative;
+        transform: none;
+        left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+    }
+
     .hero-bg-text {
-        bottom: 190px;
-        font-size: 10vw;
+        position: relative;
+        bottom: auto;
+        left: auto;
+        font-size: 15vw;
+        text-align: center;
+        margin-bottom: 10px;
+        line-height: 1;
+    }
+
+    .hero-portrait-container {
+        position: relative;
+        transform: none;
+        height: auto;
+        width: 100%;
+        max-width: 80vw;
+        margin: 10px auto 0 auto;
+    }
+
+    .hero-portrait {
+        max-height: 400px;
     }
 
     .hero-tag,
-    .hero-desc {
+    .hero-desc,
+    .hero-title-left,
+    .hero-title-right {
+        position: relative;
         top: auto;
-        bottom: 50px;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-tag {
+        width: max-content;
+        max-width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+
+    .hero-desc {
+        font-size: 1rem;
+        margin: 0 auto;
     }
 
     .hero-title-left {
-        bottom: 120px;
         font-size: 12vw;
+        line-height: 1.1;
+        margin-top: 10px;
     }
 
     .hero-title-right {
-        display: none;
-        /* Hide on very small screens or rearrange */
+        display: block;
+        font-size: 6vw;
+        line-height: 1.2;
     }
 
+    /* Projects section */
     .projects-grid {
         grid-template-columns: 1fr;
     }
 
-    .services-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 60px 30px;
+    .project-card {
+        aspect-ratio: auto;
+        min-height: 350px;
+    }
+
+    .project-info {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+        padding: 15px;
+    }
+
+    .project-info h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Stats section styles to override inline desktop styles */
+    #about {
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
     }
 
     .stats-section {
         grid-template-columns: 1fr;
     }
 
+    .stats-text h2 {
+        font-size: 2.2rem !important;
+        max-width: 100% !important;
+        text-align: center;
+    }
+
+    .stats-text p {
+        text-align: center;
+        margin: 0 auto 30px auto;
+    }
+
+    .stats-numbers {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .stat-box {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .stat-box h4 {
+        font-size: 3rem;
+    }
+
+    .stats-img {
+        margin-top: 20px;
+    }
+
+    /* Services section */
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 20px;
+    }
+
+    /* Experience section */
     .exp-row {
         grid-template-columns: 1fr;
         gap: 10px;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .exp-skills {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    /* Contact section */
+    #contact {
+        padding: 60px 0 !important;
+    }
+
+    #contact h2 {
+        font-size: 2.5rem !important;
+    }
+
+    #contact .btn-contact {
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
