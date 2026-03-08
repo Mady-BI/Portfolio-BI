@@ -136,23 +136,7 @@ section {
     /* Let clicks pass through */
 }
 
-/* Foreground "Bonjour," */
-.hero-bg-text {
-    position: absolute;
-    bottom: 46%;
-    left: 4%;
-    font-family: var(--font-serif);
-    font-size: 6vw;
-    font-style: italic;
-    color: #111;
-    z-index: 1;
-    /* keep behind portrait just in case of overlap */
-    white-space: nowrap;
-}
-
-.hero-bg-text span {
-    font-weight: 400;
-}
+/* Removed .hero-bg-text entirely */
 
 /* Central Portrait */
 .hero-portrait-container {
@@ -251,7 +235,8 @@ section {
     font-weight: 700;
     line-height: 0.9;
     color: #111;
-    z-index: 3;
+    z-index: 4;
+    /* bumped z-index to stay above portrait */
     letter-spacing: -1px;
 }
 
@@ -567,14 +552,6 @@ footer {
         width: 100%;
         padding: 0 20px;
         text-align: center;
-    }
-
-    .hero-bg-text {
-        display: none !important;
-    }
-
-    .desktop-bg-text {
-        display: none !important;
     }
 
     .mobile-bonjour {
