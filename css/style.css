@@ -65,7 +65,7 @@ section {
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px 40px;
     z-index: 1000;
@@ -217,7 +217,7 @@ section {
 .hero-desc {
     position: absolute;
     right: 4%;
-    top: 45%;
+    top: 35%;
     text-align: left;
     max-width: 250px;
     font-size: 1rem;
