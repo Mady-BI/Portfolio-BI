@@ -167,7 +167,7 @@ section {
 
 .hero-tag {
     position: absolute;
-    left: 4%;
+    left: 8%;
     top: 25%;
     background: #fff;
     padding: 10px 20px;
@@ -216,8 +216,8 @@ section {
 
 .hero-desc {
     position: absolute;
-    right: 4%;
-    top: 35%;
+    right: 8%;
+    top: 42%;
     text-align: left;
     max-width: 250px;
     font-size: 1rem;
@@ -228,16 +228,15 @@ section {
 
 .hero-title-left {
     position: absolute;
-    left: 4%;
-    bottom: 15%;
+    left: 8%;
+    top: 48%;
     font-family: var(--font-heading);
-    font-size: 7.5vw;
+    font-size: 3.3vw;
     font-weight: 700;
-    line-height: 0.9;
+    line-height: 1.1;
+    text-align: center;
     color: #111;
     z-index: 4;
-    /* bumped z-index to stay above portrait */
-    letter-spacing: -1px;
 }
 
 .mobile-bonjour {
@@ -246,13 +245,13 @@ section {
 
 .hero-title-right {
     position: absolute;
-    right: 4%;
+    right: 8%;
     bottom: 15%;
     font-family: var(--font-heading);
-    font-size: 3.5vw;
+    font-size: 3.3vw;
     font-weight: 700;
     line-height: 1.1;
-    text-align: left;
+    text-align: center;
     color: #111;
     z-index: 3;
 }
